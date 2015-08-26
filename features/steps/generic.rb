@@ -1,3 +1,7 @@
+When /^I wait$/ do
+  gets
+end
+
 Then /^I should( not)? see "(.+)"(?: within (.+))?$/ do |negation, text, within|
   container = page
   container = page.find(container_for(within)) if within
